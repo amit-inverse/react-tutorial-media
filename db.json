@@ -1,28 +1,33 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Myra"
-        },
-        {
-            "name": "Dean Kling",
-            "id": 6
-        },
-        {
-            "name": "Patsy Morar",
-            "id": 7
-        },
-        {
-            "name": "Irene Schamberger",
-            "id": 9
-        }
-    ],
-    "albums": [
-        {
-            "id": 1,
-            "title": "Hiking Trip",
-            "userId": 1
-        }
-    ],
-    "photos": []
+  "users": [
+    {
+      "id": 1,
+      "name": "Myra"
+    },
+    {
+      "name": "Dean Kling",
+      "id": 6
+    },
+    {
+      "name": "Patsy Morar",
+      "id": 7
+    },
+    {
+      "name": "Irene Schamberger",
+      "id": 9
+    }
+  ],
+  "albums": [
+    {
+      "id": 1,
+      "title": "Hiking Trip",
+      "userId": 1
+    },
+    {
+      "userId": 1,
+      "title": "Awesome Concrete Towels",
+      "id": 2
+    }
+  ],
+  "photos": []
 }
