@@ -1,11 +1,12 @@
-import { useFetchAlbumsQuery, useAddAlbumMutation } from '../store';
+import { useFetchAlbumsQuery, useAddAlbumMutation, useRemoveAlbumMutation } from '../store';
 import Skeleton from './Skeleton';
 import ExpandablePanel from './ExpandablePanel';
 import Button from './Button';
 
 function AlbumsList({ user }) {
     const { data, error, isLoading } = useFetchAlbumsQuery(user);
-    const [addAlbum, result] = useAddAlbumMutation();
+    const [addAlbum, results] = useAddAlbumMutation();
+    const [removeAlbum, removeAlbumResults] = useRemoveAlbumMutation();
 
     const handleAddAlbum = () => {
         addAlbum(user);
@@ -32,7 +33,7 @@ function AlbumsList({ user }) {
         <div>
             <div className="m-2 flex flex-row items-center justify-between">
                 <h3 className="text-lg font-bold">Albums for {user.name}</h3>
-                <Button loading={result.isLoading} onClick={handleAddAlbum}>
+                <Button loading={results.isLoading} onClick={handleAddAlbum}>
                     + Add Albums
                 </Button>
             </div>
