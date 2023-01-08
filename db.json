@@ -52,6 +52,16 @@
       "userId": 1,
       "title": "Luxurious Soft Sausages",
       "id": 7
+    },
+    {
+      "userId": 1,
+      "title": "Luxurious Steel Cheese",
+      "id": 8
+    },
+    {
+      "userId": 6,
+      "title": "Tasty Granite Pants",
+      "id": 9
     }
   ],
   "photos": []
